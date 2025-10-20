@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Sleep Tweaks",
+        "description": "Tweaks to sleeping",
+        "icon": {
+            "id": "minecraft:red_bed"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "global:eternalsoap",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

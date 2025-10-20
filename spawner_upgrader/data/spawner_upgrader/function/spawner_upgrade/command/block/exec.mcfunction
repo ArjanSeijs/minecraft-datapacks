@@ -1,0 +1,1 @@
+function spawner_upgrader:spawner_upgrade/raytrace/raystart {function:"spawner_upgrader:spawner_upgrade/command/block/hit", args:{}}

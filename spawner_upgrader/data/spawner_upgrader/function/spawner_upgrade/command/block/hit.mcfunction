@@ -1,0 +1,1 @@
+function spawner_upgrader:spawner_upgrade/command/block/tell with block ~ ~ ~
