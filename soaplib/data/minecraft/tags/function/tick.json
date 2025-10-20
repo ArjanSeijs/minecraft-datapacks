@@ -1,6 +1,6 @@
 {
     "values": [
-        "template:tick"
+        "soaplib:tick"
     ],
     "replace": false
 }

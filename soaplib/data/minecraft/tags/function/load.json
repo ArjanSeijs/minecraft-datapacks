@@ -1,6 +1,6 @@
 {
     "values": [
-        "template:load"
+        "soaplib:load"
     ],
     "replace": false
 }

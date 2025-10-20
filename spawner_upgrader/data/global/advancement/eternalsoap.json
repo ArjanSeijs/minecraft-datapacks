@@ -5,12 +5,7 @@
       "components": {
         "minecraft:profile": {
           "name": "EternalSoap",
-          "properties": [
-            {
-              "name": "textures",
-              "value": "ewogICJ0aW1lc3RhbXAiIDogMTcwNzQwNzUxMjEzMCwKICAicHJvZmlsZUlkIiA6ICI5MjA2NWE5ODlhMWM0MTJiOWQ1Yjk5NDkxYjc2ZTZmOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJFdGVybmFsU29hcCIsCiAgInRleHR1cmVzIiA6IHsKICAgICJTS0lOIiA6IHsKICAgICAgInVybCIgOiAiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9kMGUwMTFlZDQyNWRjNjFjZWM3OTc4MDY3NjQ4MTg4NTdiMzU3NTUwNTZlOGVhOTQyMWI1ZGNhZmY1ZGQ0ZjgxIgogICAgfQogIH0KfQ"
-            }
-          ]
+          "properties": {"textures":["eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2ZjZmRkOWNiNmRiYTFhZmY5Y2RiNjJjOTY1Y2FiMGFjNGRmYTY2YWU1MDM2ZDc5NTRkNGE2MWE3OGVhZTBmMWEifX19"]}
         }
       }
     },

@@ -1,1 +1,1 @@
-function #template:ontick
+function #soaplib:ontick
