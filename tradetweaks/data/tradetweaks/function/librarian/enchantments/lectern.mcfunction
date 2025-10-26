@@ -1,6 +1,9 @@
 function soaplib:debug/debug {f:"soaplib:lectern",m:"Lectern"}
 
-execute if block ~ ~ ~ lectern run data modify block ~ ~ ~ Book.components."minecraft:custom_data".tradetweaks set value {enchantments:{array:[]}}
+execute unless block ~ ~ ~ lectern run return fail
+execute unless data block ~ ~ ~ Book.components."minecraft:custom_data".tradetweaks run return fail
+
+execute if block ~ ~ ~ minecraft:lectern run data modify block ~ ~ ~ Book.components."minecraft:custom_data".tradetweaks set value {enchantments:{array:[]}}
 
 function soaplib:api/with.storage { \
     api: "soaplib:api/loop", \
@@ -9,6 +12,10 @@ function soaplib:api/with.storage { \
     function: "tradetweaks:librarian/enchantments/lectern.1", \
     args : {}, \
 }
+
+# Store Original Recipes
+execute unless data block ~ ~ ~ Book.components."minecraft:custom_data".tradetweaks.recipes \
+    run data modify block ~ ~ ~ Book.components."minecraft:custom_data".tradetweaks.recipes set from entity @s Offers.Recipes
 
 data modify entity @s Offers.Recipes set value []
 
