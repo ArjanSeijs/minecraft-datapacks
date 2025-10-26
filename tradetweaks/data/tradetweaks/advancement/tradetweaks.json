@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "tradetweaks",
+        "description": "The tradetweaks Datapack",
+        "icon": {
+            "id": "minecraft:emerald"
+        },
+        "show_toast": false,
+        "announce_to_chat": false
+    },
+    "parent": "soaplib:soaplib",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

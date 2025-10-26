@@ -1,0 +1,1 @@
+$tellraw @a[tag=debug] ["",{"text":"[","color":"white"},{"text":"DEBUG","color":"gold"},{"text":"] \n| "},{"text":"$(f)","color":"aqua"},{"text":"\n| $(m)"}]
