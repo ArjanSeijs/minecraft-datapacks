@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "DDD",
+    "DLD",
+    "DDD"
+  ],
+  "key": {
+    "L": "minecraft:lectern",
+    "D": "minecraft:diamond"
+  },
+  "result": {
+    "id": "minecraft:barrel",
+    "components": {
+      "minecraft:custom_data": {
+        "tradetweaks": {
+          "type": "enchanter"
+        }
+      },
+      "minecraft:item_model": "minecraft:lectern",
+      "minecraft:enchantment_glint_override": true
+    }
+  }
+}

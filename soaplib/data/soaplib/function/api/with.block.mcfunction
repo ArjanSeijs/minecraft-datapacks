@@ -4,7 +4,7 @@
 # /function with.storage {storage:S, path:P, api: loop, function: F, args : {}}
 
 $data modify storage soaplib:exec api.with.block set from block ~ ~ ~ $(path)
-$function soaplib:api/with.storage { \
+$return run function soaplib:api/with.storage { \
     api:"$(api)", \
     storage: "soaplib:exec", \
     path:"api.with.block", \
