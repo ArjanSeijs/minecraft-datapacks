@@ -1,6 +1,6 @@
 {
     "values": [
-        "tradetweaks:tick"
+        "tradetweaks:librarian/tick"
     ],
     "replace": false
 }

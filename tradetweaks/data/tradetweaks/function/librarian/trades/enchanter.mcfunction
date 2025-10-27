@@ -3,7 +3,10 @@
 
 function soaplib:debug/debug {f:"soaplib:level5",m:""}
 
-function tradetweaks:lib/jobsite
+function tradetweaks:lib/jobsite { \
+    storage_out: "tradetweaks:exec", \
+    path_out:"jobsite", \
+}
 
 function soaplib:api/with.storage { \
     api:"soaplib:api/execute_at", \

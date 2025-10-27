@@ -13,7 +13,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:repair_cost": 0,
       "minecraft:enchantable": {
-        "value": 1
+        "value": 15
       },
       "minecraft:written_book_content": {
         "pages": [
@@ -30,6 +30,9 @@
         "text": "Enchanters Guide",
         "type": "text",
         "color": "dark_purple"
+      },
+      "minecraft:stored_enchantments": {
+        "minecraft:vanishing_curse": 1
       }
     },
     "count": 1
