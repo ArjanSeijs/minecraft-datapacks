@@ -1,0 +1,13 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "reference",
+            "name": "tradetweaks:job/is_enchanter"
+        },
+        {
+            "condition": "reference",
+            "name": "tradetweaks:job/is_fisher"
+        }
+    ]
+}
