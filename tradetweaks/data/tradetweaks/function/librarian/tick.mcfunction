@@ -2,6 +2,7 @@
 
 # Remove tag if no longer librarian
 execute as @e[tag=tradetweaks.level0] \
+    if predicate tradetweaks:job/is_librarian \
     if predicate tradetweaks:job/is_jobless \
     run tag @s remove tradetweaks.level0
 

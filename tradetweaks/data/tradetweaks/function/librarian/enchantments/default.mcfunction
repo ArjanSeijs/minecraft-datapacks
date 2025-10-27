@@ -1,1 +1,0 @@
-execute unless data storage tradetweaks:config enchantments run function tradetweaks:librarian/enchantments/default.1

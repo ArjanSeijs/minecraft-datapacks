@@ -3,7 +3,7 @@ execute as @e[tag=tradetweaks.fisherman] \
     run tag @s remove tradetweaks.fisherman
 
 execute as @e[type=villager, tag=!tradetweaks.fisherman] \
-    unless predicate tradetweaks:job/is_any \
+    unless predicate tradetweaks:job/is_custom \
     if predicate tradetweaks:job/new \
     if function tradetweaks:fisherman/is_fisherman \
     run tag @s add tradetweaks.fisherman
