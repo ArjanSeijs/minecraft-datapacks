@@ -19,3 +19,6 @@ execute as @e[type=villager, tag=!tradetweaks.enchanter] at @s \
 execute as @e[tag=tradetweaks.display.enchanter] at @s \
     unless block ~ ~ ~ minecraft:barrel \
     run function tradetweaks:lib/kill
+
+execute as @e[tag=tradetweaks.enchanter] at @s \
+    run function tradetweaks:enchanter/set_trades

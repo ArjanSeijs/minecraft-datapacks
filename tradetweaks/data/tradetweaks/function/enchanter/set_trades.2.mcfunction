@@ -1,0 +1,1 @@
+$function tradetweaks:enchanter/set_trades.3 $(value)
