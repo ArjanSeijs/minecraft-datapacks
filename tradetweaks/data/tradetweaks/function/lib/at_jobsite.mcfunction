@@ -7,6 +7,6 @@ $return run function soaplib:api/with.storage { \
     api:"soaplib:api/execute_at", \
     storage: "tradetweaks:exec", \
     path:"jobsite", \
-    function:"$(function)", \
+    function: "$(function)", \
     args : $(args), \
 }

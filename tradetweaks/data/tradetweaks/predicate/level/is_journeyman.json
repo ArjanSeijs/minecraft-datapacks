@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:villager",
+      "nbt": "{VillagerData:{level:3}}",
+      "flags": {
+        "is_baby": false
+      }
+    }
+  }
