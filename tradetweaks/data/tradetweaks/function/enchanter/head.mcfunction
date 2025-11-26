@@ -1,0 +1,1 @@
+data merge entity @s {equipment: {head: {id: "minecraft:player_head", count: 1, components: {"minecraft:profile": {properties: [{value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjZlMDQwYzRiMjU1ZjgzNjUxMjJjODNkYjQ2NTk2MmQxMzhkMjQ0YWNjYTgxYTUyZWJkNTliYmZiNWNiMDU4NCJ9fX0=", name: "textures"}]}}}}}

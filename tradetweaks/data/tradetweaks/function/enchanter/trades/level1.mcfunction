@@ -9,4 +9,6 @@ function tradetweaks:lib/trade/set {index:1, trade: \
     buy: {id: "minecraft:emerald", count: 9}, \
     sell: {id: "minecraft:bookshelf", count: 1}}}
 
+function tradetweaks:enchanter/head
+
 tag @s add tradetweaks.level1
