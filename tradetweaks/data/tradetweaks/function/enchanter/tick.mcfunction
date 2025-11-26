@@ -34,3 +34,8 @@ execute as @e[type=villager, tag=!tradetweaks.enchanter] at @s \
     if predicate tradetweaks:job/new \
     if function tradetweaks:enchanter/is_enchanter \
     run tag @s add tradetweaks.enchanter
+
+# Update enchantments
+execute as @e[tag=tradetweaks.enchanter] at @s \
+    if function tradetweaks:lib/test_lastrestock \
+    run function tradetweaks:enchanter/trades/enchantments
