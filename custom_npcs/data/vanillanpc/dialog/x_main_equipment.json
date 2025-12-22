@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": {
+    "text": "Equipment Changer",
+    "color": "#d4a8ff"
+  },
+  "external_title": "Equipment",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Change your NPC's equipment. Choose one of the options and change their appearance."
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": true,
+  "exit_action": {
+    "label": "Back"
+  },
+  "columns": 1,
+  "button_width": 175,
+  "dialogs": [
+    "vanillanpc:x_sub_armor",
+    "vanillanpc:x_sub_handitem"
+  ]
+}

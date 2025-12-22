@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:notice",
+  "title": {
+    "text": "Vanilla NPC",
+    "color": "#5DEB3D",
+    "bold": true
+  },
+  "external_title": {
+    "text": "Information",
+    "type": "text",
+    "color": "#ffffff",
+    "bold": false,
+    "italic": false,
+    "underlined": false,
+    "strikethrough": false,
+    "obfuscated": false
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Vanilla NPC's helps you use the new mannequins in your Minecraft world.",
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Creator: marbrueck",
+        "color": "#54e0f2",
+        "bold": false,
+        "click_event": {
+          "action": "open_url",
+          "url": "https://modrinth.com/user/marbrueck"
+        }
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Note: Experimental features are being used. The system is still very new, so expect bugs, but also look forward to improvements.",
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "State: Release",
+        "color": "#7d7d7d"
+      }
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Version: 0.1.0",
+        "color": "#7d7d7d"
+      }
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false
+}

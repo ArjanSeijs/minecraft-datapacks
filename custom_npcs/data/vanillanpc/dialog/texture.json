@@ -1,0 +1,71 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Modify existing NPC",
+    "color": "#fffb94"
+  },
+  "external_title": {
+    "text": "Modify Texture",
+    "color": "#fffb94"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Modify an existing NPC Texture. Make sure to select the correct NPC(s).",
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text":"Convert / find on https://mineskin.org/",
+        "click_event": {
+          "action": "open_url",
+          "url": "https://mineskin.org/"
+        }
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": "Type",
+      "options": [
+        {
+          "id": "@n",
+          "display": "Nearest NPC",
+          "initial": true
+        },
+        {
+          "id": "@e",
+          "display": "All NPC's",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:text",
+      "key": "texture",
+      "label": "Texture",
+      "max_length": 4096,
+      "initial": ""
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "yes": {
+    "label": "Modify Texture",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "/execute as $(type)[type=mannequin] run data merge entity @s {profile:{\"properties\":[{\"name\":\"textures\",\"value\":\"$(texture)\"}]}}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "vanillanpc:options"
+    }
+  }
+}

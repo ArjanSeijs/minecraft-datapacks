@@ -1,0 +1,173 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Modify existing NPC Hidden Layers",
+    "color": "#fffb94"
+  },
+  "external_title": {
+    "text": "Modify Hidden Layers",
+    "color": "#fffb94"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Modify an existing NPC Texture. Make sure to select the correct NPC(s).",
+      "width": 250
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": "Type",
+      "options": [
+        {
+          "id": "@n",
+          "display": "Nearest NPC",
+          "initial": true
+        },
+        {
+          "id": "@e",
+          "display": "All NPC's",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "cape",
+      "label": "Cape",
+      "options": [
+        {
+          "id": "\"cape\",",
+          "display": "Hide Cape",
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": "Show Cape",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "jacket",
+      "label": "Jacket",
+      "options": [
+        {
+          "id": "\"jacket\",",
+          "display": "Hide Jacket",
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": "Show Jacket",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "left_sleeve",
+      "label": "Left_sleeve",
+      "options": [
+        {
+          "id": "\"left_sleeve\",",
+          "display": "Hide Left_sleeve",
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": "Show Left_sleeve",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "right_sleeve",
+      "label": "Right_sleeve",
+      "options": [
+        {
+          "id": "\"right_sleeve\",",
+          "display": "Hide Right_sleeve",
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": "Show Right_sleeve",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "left_pants_leg",
+      "label": "Left_pants_leg",
+      "options": [
+        {
+          "id": "\"left_pants_leg\",",
+          "display": "Hide Left_pants_leg",
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": "Show Left_pants_leg",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "right_pants_leg",
+      "label": "Right_pants_leg",
+      "options": [
+        {
+          "id": "\"right_pants_leg\",",
+          "display": "Hide Right_pants_leg",
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": "Show Right_pants_leg",
+          "initial": true
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "hat",
+      "label": "Hat",
+      "options": [
+        {
+          "id": "\"hat\",",
+          "display": "Hide Hat",
+          "initial": false
+        },
+        {
+          "id": "",
+          "display": "Show Hat",
+          "initial": true
+        }
+      ]
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "yes": {
+    "label": "Modify Texture",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "/execute as $(type)[type=mannequin] run data merge entity @s {hidden_layers:[$(cape)$(jacket)$(left_sleeve)$(right_sleeve)$(left_pants_leg)$(right_pants_leg)$(hat)]}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "vanillanpc:options"
+    }
+  }
+}

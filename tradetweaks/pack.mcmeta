@@ -2,6 +2,6 @@
     "pack": {
         "pack_format": 88,
         "description": "Trade Tweaks Pack",
-        "supported_formats": [88,88]
+        "supported_formats": [88,94]
     }
 }

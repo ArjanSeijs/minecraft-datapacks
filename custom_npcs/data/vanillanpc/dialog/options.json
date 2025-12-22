@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": {
+    "text": "Vanilla NPC's",
+    "type": "text",
+    "color": "#5eff24"
+  },
+  "external_title": {
+    "text": "Vanilla NPC's",
+    "type": "text",
+    "color": "#5eff24"
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Choose whether you want to spawn a new NPC or modify an existing one. You'll also find other useful information and links here.",
+      "width": 250
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "exit_action": {
+    "label": "Back"
+  },
+  "columns": 1,
+  "button_width": 200,
+  "dialogs": [
+    "vanillanpc:summonnpc",
+    "vanillanpc:modify",
+    "vanillanpc:texture",
+    "vanillanpc:hiddenlayer",
+    "vanillanpc:moreoptions",
+    "vanillanpc:creator",
+    "vanillanpc:report"
+  ]
+}

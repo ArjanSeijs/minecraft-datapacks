@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Rotation Changer",
+    "color": "#fffc99"
+  },
+  "external_title": "Rotation",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Change the rotation of one or more NPCs based on your own rotation. Make sure to select the correct NPC(s) so they can receive your rotation.",
+      "width": 250
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": "Type",
+      "label_visible": true,
+      "options": [
+        {
+          "id": "@n",
+          "display": "Nearest NPC",
+          "initial": true
+        },
+        {
+          "id": "@e",
+          "display": "All NPCs",
+          "initial": false
+        }
+      ]
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "yes": {
+    "label": "Apply Rotation",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "/execute positioned as $(type)[type=minecraft:mannequin] rotated as @p run tp @n[type=minecraft:mannequin] ~ ~ ~ ~ ~"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "vanillanpc:options"
+    }
+  }
+}

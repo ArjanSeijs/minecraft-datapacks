@@ -1,0 +1,59 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Report a Bug",
+    "color": "#cea48d"
+  },
+  "external_title": {
+    "text": "Report a Bug",
+    "color": "#cea48d"
+  },
+  "body": [
+    {
+      "type": "minecraft:item",
+      "item": {
+        "id": "minecraft:book"
+      },
+      "show_decorations": false,
+      "show_tooltip": false,
+      "height": 24
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Report a bug and help fix it. Please also include a detailed error description, including which version of the mod you're using and which version of Minecraft you're playing on.",
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": " "
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": {
+        "text": "Are you sure you want to report a bug?",
+        "type": "text",
+        "color": "#fff0f0",
+        "bold": true
+      },
+      "width": 250
+    }
+  ],
+  "inputs": [],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "close",
+  "yes": {
+    "label": "Report",
+    "action": {
+      "type": "minecraft:open_url",
+      "url": "https://github.com/marbrueck1/VNPCs/issues"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "vanillanpc:options"
+    }
+  }
+}

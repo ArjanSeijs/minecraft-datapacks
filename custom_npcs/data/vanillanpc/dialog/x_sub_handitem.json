@@ -1,0 +1,75 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Hand Items",
+    "color": "#daff94"
+  },
+  "external_title": "Hand Items",
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Duplicate the item you're currently holding and add it to the NPC. Specify whether the item should be placed in the NPC's main hand or offhand.",
+      "width": 250
+    },
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Specify which NPCs you want to give this item to.",
+      "width": 250
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:single_option",
+      "key": "type",
+      "label": "Type",
+      "label_visible": true,
+      "options": [
+        {
+          "id": "@n",
+          "display": "Nearest NPC",
+          "initial": true
+        },
+        {
+          "id": "@e",
+          "display": "All NPCs",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "hand",
+      "label": "Hand",
+      "label_visible": true,
+      "options": [
+        {
+          "id": "mainhand",
+          "display": "Mainhand",
+          "initial": true
+        },
+        {
+          "id": "offhand",
+          "display": "Offhand",
+          "initial": false
+        }
+      ]
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "yes": {
+    "label": "Copy Item",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "/item replace entity $(type)[type=minecraft:mannequin] weapon.$(hand) from entity @s weapon.mainhand"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "vanillanpc:options"
+    }
+  }
+}

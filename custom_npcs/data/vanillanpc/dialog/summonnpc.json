@@ -1,0 +1,159 @@
+{
+  "type": "minecraft:confirmation",
+  "title": {
+    "text": "Mannequin Summoner",
+    "color": "#5eff24"
+  },
+  "external_title": {
+    "text": "Summon NPC",
+    "type": "text",
+    "color": "#5eff24",
+    "bold": false
+  },
+  "body": [
+    {
+      "type": "minecraft:plain_message",
+      "contents": "Configure your mannequin before summoning:"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "minecraft:text",
+      "key": "profile_name",
+      "label": "Profile Name",
+      "initial": ""
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "profile_model",
+      "label": "Model",
+      "label_visible": true,
+      "options": [
+        {
+          "id": "wide",
+          "display": "Wide",
+          "initial": true
+        },
+        {
+          "id": "slim",
+          "display": "Slim",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "hand",
+      "label": "Main Hand",
+      "label_visible": true,
+      "options": [
+        {
+          "id": "right",
+          "display": "Right",
+          "initial": true
+        },
+        {
+          "id": "left",
+          "display": "Left",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:single_option",
+      "key": "pose",
+      "label": "Pose",
+      "label_visible": true,
+      "options": [
+        {
+          "id": "standing",
+          "display": "Standing",
+          "initial": true
+        },
+        {
+          "id": "crouching",
+          "display": "Crouching",
+          "initial": false
+        },
+        {
+          "id": "swimming",
+          "display": "Swimming",
+          "initial": false
+        },
+        {
+          "id": "fall_flying",
+          "display": "Fall Flying",
+          "initial": false
+        },
+        {
+          "id": "sleeping",
+          "display": "Sleeping",
+          "initial": false
+        }
+      ]
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "immovable",
+      "label": "Immovable",
+      "initial": true,
+      "on_true": "true",
+      "on_false": "false"
+    },
+    {
+      "type": "minecraft:boolean",
+      "key": "invulnerable",
+      "label": "Invulnerable",
+      "initial": false,
+      "on_true": "1b",
+      "on_false": "0b"
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "scale",
+      "label": "Scale",
+      "start": 0,
+      "end": 10,
+      "step": 0.1,
+      "initial": 1
+    },
+    {
+      "type": "minecraft:number_range",
+      "key": "yaw",
+      "label": "Rotation",
+      "start": -180,
+      "end": 180,
+      "step": 1,
+      "initial": 0
+    },
+    {
+      "type": "minecraft:text",
+      "key": "mainhand_item",
+      "label": "Main Hand Item",
+      "initial": "minecraft:air"
+    },
+    {
+      "type": "minecraft:text",
+      "key": "offhand_item",
+      "label": "Offhand Item",
+      "initial": "minecraft:air"
+    }
+  ],
+  "can_close_with_escape": true,
+  "pause": false,
+  "after_action": "none",
+  "yes": {
+    "label": "Summon",
+    "action": {
+      "type": "minecraft:dynamic/run_command",
+      "template": "summon minecraft:mannequin ~ ~ ~ {profile:{name:\"$(profile_name)\",model:\"$(profile_model)\"},main_hand:\"$(hand)\",pose:\"$(pose)\",Rotation:[$(yaw)F,0F],Invulnerable:$(invulnerable),attributes:[{id:\"minecraft:scale\",base:$(scale)}],immovable:$(immovable),equipment:{mainhand:{id:\"$(mainhand_item)\",count:1},offhand:{id:\"$(offhand_item)\",count:1}}}"
+    }
+  },
+  "no": {
+    "label": "Back",
+    "action": {
+      "type": "minecraft:show_dialog",
+      "dialog": "vanillanpc:options"
+    }
+  }
+}

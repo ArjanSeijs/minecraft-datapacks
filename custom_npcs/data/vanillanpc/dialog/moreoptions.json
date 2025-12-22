@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:dialog_list",
+  "title": {
+    "text": "Advanced options",
+    "color": "#fffedb"
+  },
+  "external_title": {
+    "text": "Advanced options",
+    "color": "#fffedb"
+  },
+  "body": {
+    "type": "minecraft:plain_message",
+    "contents": "Configure your NPC with even more options!",
+    "width": 250
+  },
+  "can_close_with_escape": false,
+  "pause": true,
+  "exit_action": {
+    "label": "Back"
+  },
+  "after_action":"none",
+  "columns": 1,
+  "button_width": 185,
+  "dialogs": [
+    "vanillanpc:x_main_equipment",
+    "vanillanpc:xx_main_rotation"
+  ]
+}
