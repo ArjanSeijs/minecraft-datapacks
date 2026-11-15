@@ -14,7 +14,7 @@
     "width": 250
   },
   "can_close_with_escape": false,
-  "pause": true,
+  "pause": false,
   "exit_action": {
     "label": "Back"
   },
