@@ -11,7 +11,6 @@
     },
     "title": "Eternalsoap",
     "description": "Eternalsoaps Datapacks",
-    "background": "minecraft:block/gray_concrete",
     "frame": "challenge",
     "show_toast": false,
     "announce_to_chat": false
