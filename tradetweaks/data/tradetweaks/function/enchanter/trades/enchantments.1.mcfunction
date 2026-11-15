@@ -1,9 +1,0 @@
-function tradetweaks:enchanter/trades/enchantments.store {index:2,slot:0}
-function tradetweaks:enchanter/trades/enchantments.store {index:3,slot:1}
-function tradetweaks:enchanter/trades/enchantments.store {index:4,slot:2}
-function tradetweaks:enchanter/trades/enchantments.store {index:5,slot:3}
-function tradetweaks:enchanter/trades/enchantments.store {index:6,slot:4}
-function tradetweaks:enchanter/trades/enchantments.store {index:7,slot:5}
-function tradetweaks:enchanter/trades/enchantments.store {index:8,slot:6}
-function tradetweaks:enchanter/trades/enchantments.store {index:9,slot:7}
-function tradetweaks:enchanter/trades/enchantments.store {index:10,slot:8}

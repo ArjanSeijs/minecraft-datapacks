@@ -1,8 +1,0 @@
-{
-    "values": [
-        "tradetweaks:fisherman/tick",
-        "tradetweaks:librarian/tick",
-        "tradetweaks:enchanter/tick"
-    ],
-    "replace": false
-}

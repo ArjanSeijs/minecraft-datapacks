@@ -1,2 +1,0 @@
-# data merge entity @s {equipment: {head: {id: "minecraft:player_head", count: 1, components: {"minecraft:profile": {properties: [{value: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDBjYzBhMTI1Nzc4OThlNzE2N2M0M2NmOWZlOGNiMjg5NTYzOTIxYjcwOTQ2MDEyYTYwODkzY2FiNzZlNTQ5In19fQ==", name: "textures"}]}}}}}
-data remove entity @s equipment.head
