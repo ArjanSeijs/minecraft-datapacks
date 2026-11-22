@@ -14,6 +14,16 @@
                     "per_level_above_first": 0.25
                 },
                 "operation": "add_multiplied_base"
+            },
+            {
+                "id": "minecraft:enchantment.speed",
+                "attribute": "minecraft:movement_speed",
+                "amount": {
+                    "type": "minecraft:linear",
+                    "base": 0.1,
+                    "per_level_above_first": 0.1
+                },
+                "operation": "add_multiplied_base"
             }
         ]
     },
@@ -27,7 +37,8 @@
         "per_level_above_first": 8
     },
     "slots": [
-        "body"
+        "body",
+        "saddle"
     ],
     "supported_items": "#mountequipment:enchantment/speed",
     "primary_items": "#mountequipment:enchantment/speed",
