@@ -1,4 +1,4 @@
 {
-    "values": [],
+    "values": ["soaplib:lib/villager/tick"],
     "replace": false
 }

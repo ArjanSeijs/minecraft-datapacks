@@ -1,12 +1,7 @@
- {
-    "type": "minecraft:entity_properties",
-    "entity": "this",
-    "predicate": {
-      "minecraft:nbt": {
-        "VillagerData": {
-          "level": 5
-        },
-        "IsBaby": false
-      }
-    }
+{
+  "type": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "nbt": "{VillagerData:{level:5}}"
   }
+}
