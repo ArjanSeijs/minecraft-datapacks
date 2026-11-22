@@ -3,7 +3,17 @@
         "title": "Soaplib",
         "description": "Eternals Datapack Library",
         "icon": {
-            "id": "minecraft:knowledge_book"
+            "id": "minecraft:player_head",
+            "components": {
+                "minecraft:profile": {
+                    "properties": [
+                        {
+                            "name": "textures",
+                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzZiY2I1OWFkNGIyNjExM2IxYTIwMGE5MDNhNTMxYWRjMzI1MjJjMWJlMTc1N2E1NjZkYjhjOGIifX19"
+                        }
+                    ]
+                }
+            }
         },
         "show_toast": false,
         "announce_to_chat": false
