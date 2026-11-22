@@ -1,7 +1,6 @@
 {
   "values": [
-    "minecraft:librarian/1/paper_emerald",
-    "minecraft:librarian/1/emerald_bookshelf"
+    "#tradetweaks:librarian/level_1"
   ],
   "replace": true
 }
