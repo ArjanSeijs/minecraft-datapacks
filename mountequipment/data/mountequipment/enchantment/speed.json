@@ -30,5 +30,6 @@
         "body"
     ],
     "supported_items": "#minecraft:harnesses",
+    "primary_items": "#minecraft:harnesses",
     "weight": 5
 }

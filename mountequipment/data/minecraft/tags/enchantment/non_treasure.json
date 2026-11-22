@@ -1,6 +1,6 @@
 {
-  "values": [
-    "mountequipment:speed"
-  ],
-  "replace": false
+    "values": [
+        "mountequipment:speed"
+    ],
+    "replace": false
 }
