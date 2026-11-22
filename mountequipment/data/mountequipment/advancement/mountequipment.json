@@ -1,9 +1,9 @@
 {
     "display": {
-        "title": "Template",
-        "description": "The Template Datapack",
+        "title": "Mount Equipment Enchantments",
+        "description": "Adds a few enchantments for Mount equipment",
         "icon": {
-            "id": "minecraft:knowledge_book"
+            "id": "minecraft:diamond_horse_armor"
         },
         "show_toast": false,
         "announce_to_chat": false
