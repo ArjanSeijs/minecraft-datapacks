@@ -29,7 +29,7 @@
     "slots": [
         "body"
     ],
-    "supported_items": "#minecraft:harnesses",
-    "primary_items": "#minecraft:harnesses",
+    "supported_items": "#mountequipment:enchantment/speed",
+    "primary_items": "#mountequipment:enchantment/speed",
     "weight": 5
 }

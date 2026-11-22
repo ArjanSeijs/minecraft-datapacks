@@ -76,7 +76,7 @@
 		"nbtPathQuote": null,
 		"nbtStringQuote": null,
 		"selectorKeyQuote": null,
-		"idOmitDefaultNamespace": null,
+		"idOmitDefaultNamespace": false,
 		"nameOfNbtKey": null,
 		"nameOfObjective": null,
 		"nameOfScoreHolder": null,
