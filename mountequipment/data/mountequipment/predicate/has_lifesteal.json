@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "body": {
+                "predicates": {
+                    "minecraft:enchantments": [
+                        {
+                            "enchantments": "mountequipment:lifetransfer",
+                            "levels": {
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

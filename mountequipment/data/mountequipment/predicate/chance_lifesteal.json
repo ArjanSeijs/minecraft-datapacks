@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:any_of",
+    "terms": [
+        {
+            "type": "minecraft:all_of",
+            "terms": [
+                "mountequipment:has_lifesteal_1",
+                "soaplib:api/chance/10"
+            ]
+        },
+        {
+            "type": "minecraft:all_of",
+            "terms": [
+                "mountequipment:has_lifesteal_2",
+                "soaplib:api/chance/20"
+            ]
+        },
+        {
+            "type": "minecraft:all_of",
+            "terms": [
+                "mountequipment:has_lifesteal_3",
+                "soaplib:api/chance/30"
+            ]
+        }
+    ]
+}

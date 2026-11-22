@@ -1,0 +1,1 @@
+execute as @e[type=#minecraft:can_wear_horse_armor] on passengers on vehicle if predicate mountequipment:chance_lifesteal run function mountequipment:enchantments/lifetransfer/effect
