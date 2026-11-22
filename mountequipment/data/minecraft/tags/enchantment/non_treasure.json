@@ -1,6 +1,8 @@
 {
     "values": [
-        "mountequipment:speed"
+        "mountequipment:ghast_speed",
+        "mountequipment:saddle_speed",
+        "mountequipment:lifetransfer"
     ],
     "replace": false
 }

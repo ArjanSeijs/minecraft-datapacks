@@ -1,0 +1,24 @@
+{
+    "anvil_cost": 2,
+    "description": {
+        "text": "Life Transfer"
+    },
+    "effects": {
+               
+    },
+    "max_cost": {
+        "base": 25,
+        "per_level_above_first": 8
+    },
+    "max_level": 3,
+    "min_cost": {
+        "base": 5,
+        "per_level_above_first": 8
+    },
+    "slots": [
+        "body"
+    ],
+    "supported_items": "#mountequipment:enchantment/lifetransfer",
+    "primary_items": "#mountequipment:enchantment/lifetransfer",
+    "weight": 5
+}
