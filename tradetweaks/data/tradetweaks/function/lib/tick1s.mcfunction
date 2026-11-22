@@ -1,0 +1,1 @@
+execute as @e[type=minecraft:villager,tag=soaplib.lvl5] if predicate soaplib:api/villager/job/is_librarian run function tradetweaks:lib/librarian/get_lectern_enchantments

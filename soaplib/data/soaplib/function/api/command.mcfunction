@@ -1,1 +1,1 @@
-$$(commmand)
+$$(command)
