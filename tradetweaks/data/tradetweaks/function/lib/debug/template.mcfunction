@@ -1,1 +1,1 @@
-give @s minecraft:written_book[minecraft:stored_enchantments={"unbreaking":1}, written_book_content={title:"Enchanting Template",author:"Villager #5132"}]
+give @s minecraft:written_book[minecraft:stored_enchantments={"unbreaking":1}, written_book_content={title:"Enchanting Template",author:"Villager #5132"},minecraft:custom_data={"tradetweaks:template":1}]
